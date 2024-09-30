@@ -17,8 +17,8 @@ if __name__ == "__main__":
         port = config[mode]["port"]
         uvicorn.run("api_server:app", host=host, port=port , reload=True)
     elif mode =="https":
-        ssl_keyfile = root_dir / "cert" / "key.pem"
-        ssl_certfile = root_dir / "cert" / "cert.pem"
+        ssl_keyfile = root_dir / "cert" / "server.key"
+        ssl_certfile = root_dir / "cert" / "server.crt"
         host = config[mode]["host"]
         port = config[mode]["port"]
         uvicorn.run("api_server:app", host=host, port=port ,ssl_keyfile=ssl_keyfile,ssl_certfile=ssl_certfile, reload=True)

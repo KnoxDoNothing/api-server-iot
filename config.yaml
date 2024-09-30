@@ -11,3 +11,4 @@ cors:
   origins:
     - http://localhost:3000   
     - http://172.16.5.129:2019
+    - https://172.16.5.129:2019
