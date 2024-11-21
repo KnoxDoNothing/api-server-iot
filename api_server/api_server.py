@@ -116,7 +116,7 @@ async def create_datalist_pdf_watermark(datalist: DataList):
 
 
 @app.post("/api/datalist_pdf_watermark_image")
-async def create_datalist_pdf_watermark(datalist: DataList):
+async def create_datalist_pdf_watermark_image(datalist: DataList):
     try:
         # 過濾出需要的資料
         # textwrap.fill將字串格式化，每行最多 25個字符，自動換行

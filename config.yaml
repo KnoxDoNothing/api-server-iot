@@ -1,14 +1,14 @@
-http:  
+http:
   host: 172.16.5.129
   port: 80
-https:  
+https:
   host: 172.16.5.129
-  port: 443  
+  port: 443
 local:
   host: 127.0.0.1
-  port: 8000   
+  port: 8000
 cors:
   origins:
-    - http://localhost:3000   
+    - http://localhost:3000
     - http://172.16.5.129:2019
     - https://172.16.5.129:2019
